@@ -1,0 +1,103 @@
+html,
+body {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    background: #f4f5f7;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h5-container {
+    display: none;
+}
+
+.error-container {
+    width: 960px;
+    margin: 5px auto 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.error-panel {
+    overflow: hidden;
+}
+
+.error-img {
+    margin: 0 auto;
+    height: 211px;
+    background: url("https://www.freeimg.cn/i/2024/01/27/65b49195a43ae.png") center no-repeat;
+}
+
+.error-panel .rollback-btn {
+    display: inline-block;
+    line-height: 40px;
+    margin-top: 10px;
+    vertical-align: middle;
+    text-align: center;
+    background: #00a1d6;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.error-panel .rollback-btn:hover {
+    background: #00b5e5;
+}
+
+.error-split {
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    background: url('https://static.hdslb.com/images/error/have_rest.png') center no-repeat;
+}
+
+.image-box {
+    width: 95%;
+    margin: 0 auto;
+}
+#image {
+    margin: 18px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1078px) {
+
+    .error-container {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .error-container {
+        display: none;
+    }
+
+    .h5-container {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .h5-img {
+        display: block;
+        width: 350px;
+    }
+
+    .h5-desc {
+        color: #a0a0a0;
+        text-align: center;
+    }
+}
